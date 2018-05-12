@@ -13,18 +13,17 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements Fragment_04.interface_Frag04, Fragment_03.interface_Frag03 {
+public class MainActivity extends AppCompatActivity implements Fragment_05.interface_Frag05,Fragment_04.interface_Frag04, Fragment_03.interface_Frag03 {
 
     // I have to implement each fragements interface separately. I think I can implement as many times as I
     //like but I am not so sure.
 
     View fragmentHolder;
-    int SpecialNumber = 4; // will make this a saved instance state variable later in development7
+    int SpecialNumber = 5; // will make this a saved instance state variable later in development7
     Button bnTest;
     TextView tvAnswer;
     List<Integer> compiledValues = new ArrayList<>();
-    String testString;
-    Fragment_04.interface_Frag04 FR04;
+//    String testString;
 
 
     @Override
@@ -42,6 +41,18 @@ public class MainActivity extends AppCompatActivity implements Fragment_04.inter
             if(savedInstanceState != null){
                 return;
             }// this is like an exit if something has gone wrong for this to load????
+
+            if (SpecialNumber == 5){
+
+                Fragment_05 myFragment = new Fragment_05();
+
+
+                FragmentTransaction fragementTransaction = getSupportFragmentManager().beginTransaction().add(R.id.Fragment_Holder,myFragment,null);
+                // used R.id.fragement_Holder instead of pasing a view object because it wanted an int so maybe just a
+                // id rather than an actual object. fragmentHolder.getId() should probably work too.
+                fragementTransaction.commit();
+
+            }
 
 
 

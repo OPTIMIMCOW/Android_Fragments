@@ -63,10 +63,10 @@ public class Fragment_05 extends Fragment {
         seekbar05 = view.findViewById(R.id.seekBar5);
 
         tv_Pro_01 = view.findViewById(R.id.tv_num_01);
-        tv_Pro_01 = view.findViewById(R.id.tv_num_02);
-        tv_Pro_01 = view.findViewById(R.id.tv_num_03);
-        tv_Pro_01 = view.findViewById(R.id.tv_num_04);
-        tv_Pro_01 = view.findViewById(R.id.tv_num_05);
+        tv_Pro_02 = view.findViewById(R.id.tv_num_02);
+        tv_Pro_03 = view.findViewById(R.id.tv_num_03);
+        tv_Pro_04 = view.findViewById(R.id.tv_num_04);
+        tv_Pro_05 = view.findViewById(R.id.tv_num_05);
         // linking variables to view objects
 
 
