@@ -282,6 +282,52 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.74" />
 
+    <LinearLayout
+        android:id="@+id/timeHolder"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et_Input_Time_Hours"
+            android:layout_width="25dp"
+            android:layout_height="60dp"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:hint="HH"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:text=":"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/et_Input_Time_Minutes"
+            android:layout_width="25dp"
+            android:layout_height="60dp"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:hint="MM"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+
+
+
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/tv_num_08"
@@ -302,23 +348,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.69" />
+    
+    <TextView
+        android:id="@+id/SemiColon"
+        android:layout_width="10dp"
+        android:layout_height="60dp" />
 
-    <EditText
-        android:id="@+id/et_Input_Time"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorAccent"
-        android:hint="HH:MM"
-        android:inputType="number"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+
 
 
 
