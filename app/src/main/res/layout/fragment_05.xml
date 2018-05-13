@@ -348,13 +348,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.69" />
-    
-    <TextView
-        android:id="@+id/SemiColon"
-        android:layout_width="10dp"
-        android:layout_height="60dp" />
-
-
 
 
 
