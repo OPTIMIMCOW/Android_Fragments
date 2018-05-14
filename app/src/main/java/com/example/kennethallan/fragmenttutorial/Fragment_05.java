@@ -56,7 +56,7 @@ public class Fragment_05 extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_05, container, false);
 
-        seekbar01 = view.findViewById(R.id.seekBar2);
+        seekbar01 = view.findViewById(R.id.seekBar1);
         seekbar02 = view.findViewById(R.id.seekBar2);
         seekbar03 = view.findViewById(R.id.seekBar3);
         seekbar04 = view.findViewById(R.id.seekBar4);

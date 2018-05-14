@@ -1,6 +1,5 @@
 package com.example.kennethallan.fragmenttutorial;
 
-
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
@@ -9,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SeekBar;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,10 +23,16 @@ public class Fragment_03 extends Fragment {
     private SeekBar seekbar01;
     private SeekBar seekbar02;
     private SeekBar seekbar03;
+
+    private TextView tv_Pro_01;
+    private TextView tv_Pro_02;
+    private TextView tv_Pro_03;
+
     SeekBar.OnSeekBarChangeListener mlistener;
+    //int testValue;
     List<Integer> testList = new ArrayList<>();
 
-    interface_Frag03 sendValuesInterface_Frag03;
+    Fragment_03.interface_Frag03 sendValuesInterface_Frag03;
 
 
     public Fragment_03() {
@@ -44,20 +50,22 @@ public class Fragment_03 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_03, container, false);
-        // need to call the inflater a view object so we can find our seekbar views inside it by
-        //referencing it below. Otherwise cannot use findViewById straight up.
 
-        seekbar01 = view.findViewById(R.id.seekBar2);
+        seekbar01 = view.findViewById(R.id.seekBar1);
         seekbar02 = view.findViewById(R.id.seekBar2);
         seekbar03 = view.findViewById(R.id.seekBar3);
+
+        tv_Pro_01 = view.findViewById(R.id.tv_num_01);
+        tv_Pro_02 = view.findViewById(R.id.tv_num_02);
+        tv_Pro_03 = view.findViewById(R.id.tv_num_03);
         // linking variables to view objects
 
-        // set seekBar listeners
+
+
 
         mlistener = new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-
 
                 bounceback();
 
@@ -90,9 +98,10 @@ public class Fragment_03 extends Fragment {
 
         Activity activity = (Activity) context;
 
+
         // making a try catch to check if this is initialised or not.
         try {
-            sendValuesInterface_Frag03 = (interface_Frag03) activity;
+            sendValuesInterface_Frag03 = (Fragment_03.interface_Frag03) activity;
             // we are just trying to get the interface linked to the activity this fragement
             // attaches to. We use the context of what this is Attached to to do this.
             //The context is cast to an activity and that is cast to the interface object.
@@ -101,6 +110,7 @@ public class Fragment_03 extends Fragment {
         }
 
     }
+
 
     // this method is used to gather the seekbar progress and send it onto the activity for display.
     private void compileProgress(){
@@ -133,9 +143,16 @@ public class Fragment_03 extends Fragment {
             int newpro01 = (int) Math.round(pro01*ratio);
             int newpro02 = (int) Math.round(pro02*ratio);
             int newpro03 = (int) Math.round(pro03*ratio);
-            seekbar01.setProgress(newpro01);
-            seekbar02.setProgress(newpro02);
-            seekbar03.setProgress(newpro03);
+//            seekbar01.setProgress(newpro01);
+//            seekbar02.setProgress(newpro02);
+//            seekbar03.setProgress(newpro03);
+//            seekbar04.setProgress(newpro04);
+//            seekbar05.setProgress(newpro05);
+            // this is to do the bouceback
+            // instead do this to just update figures
+            tv_Pro_01.setText( Integer.toString(newpro01));
+            tv_Pro_02.setText( Integer.toString(newpro02));
+            tv_Pro_03.setText( Integer.toString(newpro03));
         }
 
 

@@ -27,7 +27,7 @@
 
     <TextView
         android:id="@+id/tv_num_05"
-        android:layout_width="50dp"
+        android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -36,7 +36,7 @@
         android:background="@color/colorAccent"
         android:gravity="center"
         android:rotation="18"
-        android:text="00:00"
+        android:text="@string/Default_Time"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +64,7 @@
 
     <TextView
         android:id="@+id/tv_num_01"
-        android:layout_width="50dp"
+        android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -73,7 +73,7 @@
         android:background="@color/colorAccent"
         android:gravity="center"
         android:rotation="0"
-        android:text="00:00"
+        android:text="@string/Default_Time"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +101,7 @@
 
     <TextView
         android:id="@+id/tv_num_02"
-        android:layout_width="50dp"
+        android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -110,7 +110,7 @@
         android:background="@color/colorAccent"
         android:gravity="center"
         android:rotation="-18"
-        android:text="00:00"
+        android:text="@string/Default_Time"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -139,7 +139,7 @@
 
     <TextView
         android:id="@+id/tv_num_03"
-        android:layout_width="50dp"
+        android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -148,7 +148,7 @@
         android:background="@color/colorAccent"
         android:gravity="center"
         android:rotation="54"
-        android:text="00:00"
+        android:text="@string/Default_Time"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -160,7 +160,7 @@
 
     <TextView
         android:id="@+id/tv_num_04"
-        android:layout_width="50dp"
+        android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -169,7 +169,7 @@
         android:background="@color/colorAccent"
         android:gravity="center"
         android:rotation="-54"
-        android:text="00:00"
+        android:text="@string/Default_Time"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
